@@ -43,7 +43,7 @@ const App = () => {
       <div className="flex flex-col items-center justify-center gap-32 pt-24">
         <FadeOnScroll>
           <section id="sec1" className="h-screen flex items-center justify-center">
-            <h1 className="text-5xl font-bold">Section 1 — fades up smoothly ✨</h1>
+            <h1 className="text-5xl font-bold">Section 1 — Checking github problem ✨</h1>
           </section>
         </FadeOnScroll>
 
