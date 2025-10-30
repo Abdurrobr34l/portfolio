@@ -1,10 +1,82 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
-/* @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+/* colors: {
+        // Light theme
+        primary: '#0F172A',   // Indigo
+        secondary: '#64748b', // Gray
+        background: '#1e3a8a', // White
+        // Dark theme
+        darkPrimary: '#030712', // Indigo-500
+        darkSecondary: '#94a3b8', // Gray-400
+        darkBackground: '#0F172A', // Gray-900
+      }, */
+html, body, .navbar, .btn  {
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* LIGHT THEME (default) */
+  --color-primary: #403f3f;
+  --color-secondary: #d72050;
+  --color-accent: #706f6f;
+  --color-base-100: #ffffff;
+  --color-base-200: #f3f3f3;
+  --color-base-300: #e7e7e7;
+  --color-neutral: #1e293b;
+}
+
+[data-theme="dark"] {
+  --color-primary: #ffffff;
+  --color-secondary: #94a3b8;
+  --color-accent: #67e8f9;
+  --color-base-100: #030712;
+  --color-base-200: #1e293b;
+  --color-base-300: #334155;
+  --color-neutral: #0f172a;
+}
+
+/* ---- Global font ---- */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---- Navbar & Buttons ---- */
+.navbar-ul a.active {
+  @apply font-bold text-primary border-b-2;
+}
+
+.categories-ul a.active {
+  @apply bg-base-200;
+}
+
+.findus-button {
+  @apply justify-start gap-2 !py-8 text-primary text-[14px] !w-full bg-transparent shadow-none transition-colors duration-200 ease-linear hover:bg-secondary hover:text-white;
+}
+
+/* ---- Smooth theme transition ---- */
+html, body, .navbar, .btn, a {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+/* ---- Custom scrollbar ---- */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f0f0f000 !important;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #f0f0f000 !important;
+  border-radius: 4px;
+  border: 2px solid #f0f0f0;
+}
+
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #d72050 #f0f0f000;
+}
