@@ -5,11 +5,11 @@
 
 html, body {
   transition: background-color 0.5s ease, color 0.5s ease;
+  scroll-behavior: smooth;
 }
 
 body {
-  /* Use gradient instead of plain color */
-  background: radial-gradient(circle at top center, var(--color-accent), var(--color-primary)) !important;
+  background: radial-gradient(circle at top center, var(--color-accent), var(--color-primary-for-bg)) !important;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-primary);
@@ -17,24 +17,28 @@ body {
 
 /* LIGHT THEME */
 :root {
-  --color-primary: #030712;
-  --color-secondary: #121212;
+  --color-primary-for-bg: #030712;
+  --color-primary: #ffffff;
+  --color-secondary: #d4d6d5;
   --color-accent: #372aac;
+  /* 
   --color-base-100: #ffffff;
   --color-base-200: #f3f3f3;
   --color-base-300: #e7e7e7;
-  --color-neutral: #ffffff;
+  --color-neutral: #ffffff; */
 }
 
 /* DARK THEME */
 [data-theme="dark"] {
-  --color-primary: #ffffff;
-  --color-secondary: #d4d6d5;
+  --color-primary-for-bg: #ffffff;
+  --color-primary: #030712;
+  --color-secondary: #121212;
   --color-accent: #372aac;
+  /* 
   --color-base-100: #030712;
   --color-base-200: #1e293b;
   --color-base-300: #334155;
-  --color-neutral: #d4d6d5;
+  --color-neutral: #d4d6d5; */
 }
 
 /* Make sure DaisyUI .bg-base-100 doesn't override your gradient */

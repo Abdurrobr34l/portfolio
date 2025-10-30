@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className='flex  flex-col justify-center items-center my-10 h-[calc(100vh-200px)]'>
+    <section className='flex flex-col justify-center items-center my-10 h-[calc(100vh-200px)]'>
      {/* Greeting */}
       <span className="text-lg md:text-xl font-medium text-(--color-secondary) mb-2">
         Hi, I am
@@ -14,7 +14,7 @@ const Hero = () => {
       </h1>
 
       {/* Description */}
-      <p className="max-w-xl text-center text-(--color-neutral) text-base md:text-lg mb-6 leading-relaxed">
+      <p className="max-w-xl text-center text-secondary text-base md:text-lg mb-6 leading-relaxed">
         Transforming visions into seamless, responsive websites that engage and inspire. With expertise in modern web technologies and clean, functional design.
       </p>
 

@@ -104,8 +104,8 @@ const Header = () => {
                     className={`relative px-0 py-2 text-md font-bold transition-all duration-300 hover:bg-transparent
                   ${
                     activeLink === link.path
-                      ? "text-accent"
-                      : "text-base-content/70 hover:text-primary"
+                      ? "text-primary"
+                      : "text-white hover:text-white"
                   }`}
                   >
                     {link.name}
@@ -113,7 +113,7 @@ const Header = () => {
                       className={`absolute left-0 bottom-0 h-0.5 bg-primary transition-all duration-300
                     ${
                       activeLink === link.path
-                        ? "w-full bg-accent!"
+                        ? "w-full bg-primary"
                         : "w-0 hover:w-full bg-primary"
                     }`}
                     ></span>
