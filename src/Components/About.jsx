@@ -5,7 +5,7 @@ import { FaAngleRight } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section id="about" className="mb-10 2xl:mt-14">
+    <section id="about" className="mb-10 2xl:mt-14 h-[calc(100vh - 120px)]">
       <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:gap-20 lg:px-20 xl:px-32">
         <div>
           <img src={aboutImage} alt="" className="h-[400px] rounded-full md:h-[450px]" />
