@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Container from "./Container";
+import logo from "../assets/mine-5.webp";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(""); // Track clicked link
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   const navigationLinks = [
@@ -30,23 +31,23 @@ const Header = () => {
 
   return (
     <header
-      className={`py-2 transition-500 duration-500  ${
+      className={`py-6 transition-500 duration-500  ${
         isSticky
           ? "sticky top-0 z-50 shadow-md bg-base-100 dark:bg-base-100 backdrop-blur-sm"
           : ""
       }`}
     >
       <Container>
-        <div className="navbar">
+        <div className="navbar p-0">
           {/* Dropdown Menu & Logo */}
           <div className="navbar-start flex items-center gap-4">
             {/* Logo/Home */}
-            <a
-              href="/"
-              onClick={() => setActiveLink("")}
-              className="btn btn-ghost text-xl font-bold"
-            >
-              Logo
+            <a href="/" onClick={() => setActiveLink("")} className="">
+              <img
+                src={logo}
+                alt="It is the author image"
+                className="size-14 rounded-full outline-2 outline-indigo-800 outline-offset-2"
+              />
             </a>
 
             {/* Mobile Dropdown */}
@@ -70,7 +71,7 @@ const Header = () => {
 
               <ul
                 tabIndex={-1}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow outline-2 outline-indigo-800"
               >
                 {navigationLinks.map((link) => (
                   <li key={link.id}>
@@ -80,7 +81,7 @@ const Header = () => {
                       className={`relative block px-3 py-2 transition-all duration-300
                     ${
                       activeLink === link.path
-                        ? "text-primary"
+                        ? "text-accent"
                         : "text-base-content/70 hover:text-primary"
                     }`}
                     >
@@ -100,16 +101,16 @@ const Header = () => {
 
           {/* Navigation Menus */}
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 gap-4">
+            <ul className="menu menu-horizontal px-1 gap-10">
               {navigationLinks.map((link) => (
                 <li key={link.id}>
                   <a
                     href={link.path}
                     onClick={() => setActiveLink(link.path)}
-                    className={`relative px-4 py-2 font-medium transition-all duration-300 hover:bg-transparent
+                    className={`relative px-0 py-2 text-md font-bold transition-all duration-300 hover:bg-transparent
                   ${
                     activeLink === link.path
-                      ? "text-primary"
+                      ? "text-accent"
                       : "text-base-content/70 hover:text-primary"
                   }`}
                   >
@@ -117,7 +118,9 @@ const Header = () => {
                     <span
                       className={`absolute left-0 bottom-0 h-0.5 bg-primary transition-all duration-300
                     ${
-                      activeLink === link.path ? "w-full" : "w-0 hover:w-full"
+                      activeLink === link.path
+                        ? "w-full bg-accent!"
+                        : "w-0 hover:w-full bg-primary"
                     }`}
                     ></span>
                   </a>
@@ -127,7 +130,7 @@ const Header = () => {
           </div>
 
           {/* Theme Toggler */}
-          <div className="navbar-end">
+          <div className="navbar-end gap-5">
             <label className="swap swap-rotate">
               {/* hidden checkbox */}
               <input
@@ -154,6 +157,8 @@ const Header = () => {
                 <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
               </svg>
             </label>
+
+            <button className="common-btn resume-btn">Resume</button>
           </div>
         </div>
       </Container>
