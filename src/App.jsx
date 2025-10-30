@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import Hero from './Components/Hero';
 import Container from './Components/Container';
 import About from './Components/About';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
           <About></About>
         </Container>
       </main>
+
+      <Footer></Footer>
     </div>
   );
 };

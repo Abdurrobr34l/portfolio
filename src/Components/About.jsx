@@ -1,15 +1,17 @@
 import React from 'react';
-import aboutImage from "../assets/about-image.png";
+import aboutImage from "../assets/mine-5.webp";
 
 const About = () => {
   return (
-    <section id='about' className='flex my-10 h-[calc(100vh-200px)]'>
+    <section id='about' className='h-[calc(100vh-170px)]'>
+      <div className='flex items-center justify-between'>
       <div>
-        <img src={aboutImage} alt="" className='h-[500px]'/>
+        <p>Lorem, ipsum.</p>
       </div>
       
       <div>
-        <p>Lorem, ipsum.</p>
+        <img src={aboutImage} alt="" className='h-[500px]'/>
+      </div>
       </div>
     </section>
   );

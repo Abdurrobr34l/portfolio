@@ -31,9 +31,9 @@ const Header = () => {
 
   return (
     <header
-      className={`py-6 transition-500 duration-500  ${
+      className={`py-6 transition-all duration-500 ease-linear ${
         isSticky
-          ? "sticky top-0 z-50 shadow-md bg-base-100 dark:bg-base-100 backdrop-blur-sm"
+          ? "sticky top-0 py-2! z-50 shadow-md bg-base-100 dark:bg-base-100 backdrop-blur-xl"
           : ""
       }`}
     >
