@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Container from "./Container";
-import logo from "../assets/mine-5.webp";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(""); // Track clicked link
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [isSticky, setIsSticky] = useState(false);
 
   const navigationLinks = [
@@ -46,13 +46,13 @@ const Header = () => {
               <img
                 src={logo}
                 alt="It is the author image"
-                className="size-14 rounded-full outline-2 outline-indigo-800 outline-offset-2"
+                className="size-14 rounded-full lg:size-16"
               />
             </a>
 
             {/* Mobile Dropdown */}
             <div className="dropdown">
-              <div tabIndex={0} className="btn btn-ghost lg:hidden">
+              <div tabIndex={0} className="btn btn-ghost lg:hidden pl-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -79,18 +79,12 @@ const Header = () => {
                       href={link.path}
                       onClick={() => setActiveLink(link.path)}
                       className={`relative block px-3 py-2 transition-all duration-300
-                    ${
-                      activeLink === link.path
-                        ? "text-accent"
-                        : "text-base-content/70 hover:text-primary"
-                    }`}
+      ${activeLink === link.path ? "text-white" : "text-base-content/70"}`}
                     >
                       {link.name}
                       <span
-                        className={`absolute left-0 bottom-0 h-0.5 bg-primary transition-all duration-300
-                      ${
-                        activeLink === link.path ? "w-full" : "w-0 hover:w-full"
-                      }`}
+                        className={`absolute left-0 bottom-0 h-0.5 bg-white transition-all duration-300
+        ${activeLink === link.path ? "w-full" : "w-0 hover:w-full"}`}
                       ></span>
                     </a>
                   </li>
