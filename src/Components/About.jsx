@@ -34,6 +34,7 @@ const About = () => {
             <li className="flex items-center gap-1"><FaAngleRight className="text-accent"/> SCSS</li>
             <li className="flex items-center gap-1"><FaAngleRight className="text-accent"/> Bootstrap</li>
             <li className="flex items-center gap-1"><FaAngleRight className="text-accent"/> Tailwind CSS</li>
+            <li className="flex items-center gap-1"><FaAngleRight className="text-accent"/> WordPress</li>
 
             <li className="flex items-center gap-1"><FaAngleRight className="text-accent"/> DaisyUI</li>
             <li className="flex items-center gap-1"><FaAngleRight className="text-accent"/> JavaScript (ES6+)</li>

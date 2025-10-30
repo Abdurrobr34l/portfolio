@@ -2,6 +2,10 @@ import React from "react";
 import { FaGithub, FaLink } from "react-icons/fa";
 import appimage from "../assets/projects/apps.png";
 import taxicab from "../assets/projects/taxicab.webp";
+import agency from "../assets/projects/agency.webp";
+import iLander from "../assets/projects//ilander.webp";
+import nipro from "../assets/projects/nipro.webp";
+import dragonNews from "../assets/projects/news.webp";
 
 const Projects = () => {
   const projects = [
@@ -10,7 +14,7 @@ const Projects = () => {
       projectName: "AppSphere",
       image: appimage,
       description:
-        "Responsive app-store UI with search, details, and install features.",
+        "AppSphere is a responsive app-store UI built with React. It displays apps from a JSON data source, supports live search, app details pages with review charts, localStorage-based installation, and a My Installation page to manage installed apps. The project follows the Hero IO assignment requirements.",
       stackUsed: [
         "React",
         "Tailwind CSS",
@@ -24,71 +28,58 @@ const Projects = () => {
       id: 2,
       projectName: "Taxicab",
       image: taxicab,
-      description: "Personal portfolio to showcase projects and skills.",
-      stackUsed: ["React", "Tailwind CSS", "Vite"],
+      description:
+        "This is a fully responsive website built using HTML, CSS, JavaScript, jQuery, Bootstrap, and various jQuery plugins. The project features dynamic content interactions, responsive layouts for multiple devices, smooth scrolling effects, modal popups, and interactive components powered by jQuery plugins.",
+      stackUsed: ["CSS", "Bootstrap", "Javascript", "JQuery", "JQuery Plugin"],
     },
     {
       id: 3,
-      projectName: "E-Commerce App",
-      image: appimage,
+      projectName: "Agency",
+      image: agency,
       description:
-        "Full-stack e-commerce platform with shopping cart and payment.",
-      stackUsed: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+        "Agency is a fully responsive, multi-page WordPress website designed to showcase services, team members, and client projects. Built with WordPress and enhanced using WPForms, custom animations, and interactive UI elements, the site provides a seamless user experience across devices.",
+      stackUsed: ["WordPress", "PHP", "WPForms", "JQuery", "Custom CSS"],
     },
     {
       id: 4,
-      projectName: "Design Tool Dashboard",
-      image: appimage,
+      projectName: "iLander",
+      image: iLander,
       description:
-        "Dashboard to manage design projects and assets in real-time.",
-      stackUsed: ["React", "DaisyUI", "Figma API"],
+        "iLander is a multi-page WordPress website designed for a creative agency. It features fully responsive layouts, smooth animations, interactive sections, and integrated contact forms. The project highlights custom page designs, clear content hierarchy, and enhanced user experience across all devices. Built to deliver a modern and professional web presence for clients, it uses WPForms for seamless form management and includes subtle animation effects to engage users.",
+      stackUsed: [
+        "WordPress",
+        "PHP",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "WPForms",
+        "Custom CSS/Animations",
+      ],
     },
     {
       id: 5,
-      projectName: "Blog CMS",
-      image: appimage,
-      description: "Content management system for publishing blog posts.",
-      stackUsed: ["React", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
+      projectName: "Nipro",
+      image: nipro,
+      description: "Nipro Agency is a fully responsive multi-page website built with Bootstrap, designed to showcase the services and portfolio of a digital agency. It features smooth scrolling, interactive sections, and custom animations to enhance user engagement. The project includes multiple pages with consistent design, clear content structure, and professional visuals.",
+      stackUsed: ["Bootstrap", "JavaScript", "jQuery", "Custom Animations", "Responsive Design"],
     },
     {
       id: 6,
-      projectName: "Weather App",
-      image: appimage,
+      projectName: "Dragon News",
+      image: dragonNews,
       description:
-        "Live weather updates with search by city and API integration.",
-      stackUsed: ["React", "Axios", "Tailwind CSS", "OpenWeather API"],
+        "Dragon News is a responsive news portal built with React, Vite, and Firebase Authentication. It allows users to browse categorized news, read detailed articles, and securely log in or register using Firebase. The project is styled with Tailwind CSS and enhanced with DaisyUI and React Icons for a clean, modern UI.",
+      stackUsed: ["React", "Firebase", "Tailwind CSS", "DaisyUI", "Date-FNS"],
     },
   ];
 
   return (
     <section id="projects" className="my-40">
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
         {projects.map(({ id, projectName, image, description, stackUsed }) => (
-
-
-          // <div className="relative overflow-hidden">
-          //   <img src={appimage} alt="It is Project mockup image" className="h-[280px] w-full rounded-xl"/>
-
-          //   <div key={id} className="absolute border border-white/20 bg-white/10 backdrop-blur-md rounded-xl p-6 text-primary shadow-lg">
-          //   <h2 className="text-xl font-semibold text-accent">{projectName}</h2>
-          //   <p className="mt-2 mb-4">{description}</p>
-          //   <ul className="flex items-center flex-wrap gap-2">
-          //     {stackUsed.map((stack) => (
-          //       <li className="badge bg-indigo-500 text-white border-none">{stack}</li>
-          //     ))}
-          //   </ul>
-          //   <div className="flex justify-end gap-3 text-xl">
-          //     <a href="#">
-          //       <FaGithub className="text-primary hover:text-accent" />
-          //     </a>
-          //     <a href="#">
-          //       <FaLink className="text-primary hover:text-accent" />
-          //     </a>
-          //   </div>
-          // </div>
-          // </div>
-
-          <div className="relative overflow-hidden group">
+          <div className="relative overflow-hidden group border-white/20 bg-white/10 backdrop-blur-lg rounded-xl">
             <img
               src={image}
               alt="Project mockup image"
@@ -97,14 +88,17 @@ const Projects = () => {
 
             <div
               key={id}
-              className="absolute inset-0 border border-white/20 bg-white/10 backdrop-blur-lg rounded-xl p-6 text-primary shadow-lg
-               opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between"
+              className="absolute inset-0 border border-white/20 bg-white/60 backdrop-blur-lg rounded-xl p-6 text-primary shadow-lg
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear flex flex-col justify-center gap-20"
             >
               <div>
                 <h2 className="text-xl font-semibold text-accent">
                   {projectName}
                 </h2>
-                <p className="mt-2 mb-4">{description}</p>
+                <p className=" mt-2 mb-4">{description}</p>
+              </div>
+
+              <div className="flex flex-col gap-10">
                 <ul className="flex items-center flex-wrap gap-2">
                   {stackUsed.map((stack) => (
                     <li
@@ -115,19 +109,18 @@ const Projects = () => {
                     </li>
                   ))}
                 </ul>
+                <div className="flex justify-end gap-3 text-2xl">
+                  <a href="#">
+                    <FaGithub className="text-primary hover:text-accent" />
+                  </a>
+                  <a href="#">
+                    <FaLink className="text-primary hover:text-accent" />
+                  </a>
+                </div>
               </div>
-              <div className="flex justify-end gap-3 text-xl">
-                <a href="#">
-                  <FaGithub className="text-primary hover:text-accent" />
-                </a>
-                <a href="#">
-                  <FaLink className="text-primary hover:text-accent" />
-                </a>
-              </div>
+              
             </div>
           </div>
-
-
         ))}
       </div>
     </section>
