@@ -62,3 +62,7 @@ body {
 .resume-btn {
     @apply bg-accent;
 }
+
+.rfm-marquee {
+  gap: 40px;
+}
