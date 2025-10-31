@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Container from "./Container";
 import logo from "../assets/logo.png";
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
   const [activeLink, setActiveLink] = useState(""); // Track clicked link
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   const navigationLinks = [
