@@ -38,22 +38,17 @@ const Projects = () => {
       image: agency,
       description:
         "Agency is a fully responsive, multi-page WordPress website designed to showcase services, team members, and client projects. Built with WordPress and enhanced using WPForms, custom animations, and interactive UI elements, the site provides a seamless user experience across devices.",
-      stackUsed: ["WordPress", "PHP", "WPForms", "JQuery", "Custom CSS"],
+      stackUsed: ["WordPress", "PHP", "WPForms"],
     },
     {
       id: 4,
       projectName: "iLander",
       image: iLander,
       description:
-        "iLander is a multi-page WordPress website designed for a creative agency. It features fully responsive layouts, smooth animations, interactive sections, and integrated contact forms. The project highlights custom page designs, clear content hierarchy, and enhanced user experience across all devices. Built to deliver a modern and professional web presence for clients, it uses WPForms for seamless form management and includes subtle animation effects to engage users.",
+        "iLander is a multi-page WordPress website designed for a creative agency. It features fully responsive layouts, smooth animations, interactive sections, and integrated contact forms. The project highlights custom page designs, clear content hierarchy.",
       stackUsed: [
         "WordPress",
         "PHP",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "Bootstrap",
         "WPForms",
         "Custom CSS/Animations",
       ],
@@ -62,8 +57,8 @@ const Projects = () => {
       id: 5,
       projectName: "Nipro",
       image: nipro,
-      description: "Nipro Agency is a fully responsive multi-page website built with Bootstrap, designed to showcase the services and portfolio of a digital agency. It features smooth scrolling, interactive sections, and custom animations to enhance user engagement. The project includes multiple pages with consistent design, clear content structure, and professional visuals.",
-      stackUsed: ["Bootstrap", "JavaScript", "jQuery", "Custom Animations", "Responsive Design"],
+      description: "Nipro Agency is a fully responsive multi-page website built with Bootstrap, designed to showcase the services and portfolio of a digital agency. It features smooth scrolling, interactive sections, and custom animations to enhance user engagement.",
+      stackUsed: ["Bootstrap", "JavaScript", "jQuery", "Custom Animations"],
     },
     {
       id: 6,
@@ -88,17 +83,17 @@ const Projects = () => {
 
             <div
               key={id}
-              className="absolute inset-0 border border-white/20 bg-white/60 backdrop-blur-lg rounded-xl p-6 text-primary shadow-lg
-               opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear flex flex-col justify-center gap-20"
+              className="absolute inset-0 border border-white/20 bg-white/80 backdrop-blur-lg rounded-xl p-3 text-primary shadow-lg
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear flex flex-col md:justify-center lg:gap-20 xl:gap-0"
             >
               <div>
                 <h2 className="text-xl font-semibold text-accent">
                   {projectName}
                 </h2>
-                <p className=" mt-2 mb-4">{description}</p>
+                <p className=" mt-2 mb-4 textarea-md md:text-[12px] lg:text-base">{description}</p>
               </div>
 
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col gap-2 md:gap-5">
                 <ul className="flex items-center flex-wrap gap-2">
                   {stackUsed.map((stack) => (
                     <li
