@@ -47,10 +47,10 @@ const About = () => {
               <FaAngleRight className="text-accent" /> Bootstrap
             </li>
             <li className="flex items-center gap-1">
-              <FaAngleRight className="text-accent" /> Tailwind CSS
+              <FaAngleRight className="text-accent" /> WordPress
             </li>
             <li className="flex items-center gap-1">
-              <FaAngleRight className="text-accent" /> WordPress
+              <FaAngleRight className="text-accent" /> Tailwind CSS
             </li>
 
             <li className="flex items-center gap-1">

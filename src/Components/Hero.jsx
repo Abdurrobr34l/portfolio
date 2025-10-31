@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className='flex flex-col justify-center items-center my-10 h-[calc(100vh-200px)]'>
+    <section className='relative flex flex-col justify-center items-center my-10 h-[calc(100vh-200px)]'>
      {/* Greeting */}
       <span className="text-lg md:text-xl font-medium text-(--color-secondary) mb-2">
         Hi, I am
