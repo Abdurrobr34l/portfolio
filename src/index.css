@@ -15,6 +15,10 @@ body {
   color: var(--color-primary);
 }
 
+.loader {
+  background: radial-gradient(circle at center, var(--color-accent), #ffffff) !important;
+
+}
 /* LIGHT THEME */
 :root {
   --color-primary-for-bg: rgb(3, 7, 18);

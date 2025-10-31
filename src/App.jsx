@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Container from "./Components/Container";
@@ -9,18 +9,28 @@ import Contact from "./Components/Contact";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
+import Loader from "./Components/Loader";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     Aos.init({
-      duration: 1000, // animation duration (in ms)
-      once: true, // only run animation once
-      offset: 50, // start animation 50px before element is in view
+      duration: 1000,
+      once: true,
+      offset: 50,
     });
+
+    // Simulate loading time (or use fetch to wait for data)
+    const timer = setTimeout(() => setLoading(false), 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
+  if (loading) return <Loader />; // Show loader first
+
   return (
-    <div className="bg-base-100 text-base-content min-h-screen">
+        <div className="bg-base-100 text-base-content min-h-screen">
       <Header></Header>
       <AnimatedCursor
         innerSize={8}
