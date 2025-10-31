@@ -51,21 +51,21 @@ const Contact = () => {
                 <label className="label mt-3">Name</label>
                 <input
                   type="text"
-                  className="input bg-white/30 w-full py-6 rounded-lg"
+                  className="input bg-white/30 w-full py-6 rounded-lg focus:outline-2 focus:outline-accent! focus-within:border-transparent"
                   placeholder="Name"
                 />
 
                 <label className="label mt-3">Email</label>
                 <input
                   type="email"
-                  className="input bg-white/30 w-full py-6 rounded-lg"
+                  className="input bg-white/30 w-full py-6 rounded-lg focus:outline-2 focus:outline-accent! focus-within:border-transparent"
                   placeholder="Email"
                 />
 
                 <label className="label mt-3">Message</label>
                 <textarea
                   placeholder="Message"
-                  class="textarea bg-white/30 textarea-sm w-full rounded-lg"
+                  class="textarea bg-white/30 textarea-sm w-full rounded-lg focus:outline-2 focus:outline-accent! focus-within:border-transparent"
                 ></textarea>
 
                 <button className="common-btn resume-btn mt-4">Send</button>

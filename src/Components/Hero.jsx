@@ -17,13 +17,13 @@ const Hero = () => {
         <FaJs className="text-yellow-400 text-5xl absolute top-10 left-16 animate-floatX"  data-aos="fade-right" data-aos-delay="600"/>
         <FaGithub className="text-gray-200 text-5xl absolute bottom-10 left-24 animate-rotateSlow"  data-aos="fade-right" data-aos-delay="600"/>
         <FaNodeJs className="text-green-500 text-5xl absolute top-28 left-[25%] animate-float"  data-aos="fade-right" data-aos-delay="600"/>
-        <SiExpress className="text-gray-400 text-4xl absolute bottom-32 left-1/3 animate-float"  data-aos="fade-right" data-aos-delay="600"/>
+        <SiExpress className="text-gray-400 text-4xl absolute bottom-12 left-1/3 animate-float"  data-aos="fade-right" data-aos-delay="600"/>
         
         <TbBrandVite className="text-purple-500 text-5xl absolute top-24 right-16 animate-rotateSlow"  data-aos="fade-left" data-aos-delay="600"/>
-        <FaReact className="text-sky-400 text-6xl absolute bottom-24 right-32 animate-float"  data-aos="fade-left" data-aos-delay="600"/>
-        <SiMongodb className="text-green-600 text-5xl absolute top-1/3 right-1/4 animate-float"  data-aos="fade-left" data-aos-delay="600"/>
+        <FaReact className="text-sky-400 text-6xl absolute bottom-24 right-32 animate-rotateSlow"  data-aos="fade-left" data-aos-delay="600"/>
+        <SiMongodb className="text-green-600 text-5xl absolute top-1/3 right-1/4 -rotate-45 animate-float"  data-aos="fade-left" data-aos-delay="600"/>
         <RiTailwindCssFill className="text-cyan-400 text-5xl absolute bottom-10 right-10 animate-rotateSlow"  data-aos="fade-left" data-aos-delay="600"/>
-        <FaBootstrap className="text-indigo-500 text-5xl absolute top-10 right-1/3 animate-rotateSlow"  data-aos="fade-left" data-aos-delay="600"/>
+        <FaBootstrap className="text-indigo-500 text-5xl absolute top-10 right-1/3 animate-float"  data-aos="fade-left" data-aos-delay="600"/>
       </div>
 
       {/* Name */}

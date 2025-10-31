@@ -75,7 +75,7 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-delay={index * 200}
             data-aos-duration={600 + index * 100}
-            className="relative overflow-hidden group border-white/20 bg-white/10 backdrop-blur-lg rounded-xl"
+            className="relative overflow-hidden group border-black bg-white/10 backdrop-blur-lg rounded-xl"
           >
             <img
               src={image}
