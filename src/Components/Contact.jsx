@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../assets/mine-5.webp";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { FaLocationPinLock } from "react-icons/fa6";
 

@@ -46,10 +46,6 @@ body {
   background-color: transparent !important;
 }
 
-/* Optional: text colors using CSS variables */
-/* .text-primary { color: var(--color-primary) !important; }
-.text-accent { color: var(--color-accent) !important; } */
-
 /* ---- Global font ---- */
 * {
   font-family: "Poppins", sans-serif;
@@ -65,4 +61,45 @@ body {
 
 #projects p {
   flex-grow: 1 !important;
+}
+
+/* ---- Custom Floating & Rotation Animations ---- */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatX {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---- Animation utility classes ---- */
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-floatX {
+  animation: floatX 6s ease-in-out infinite;
+}
+
+.animate-rotateSlow {
+  animation: rotateSlow 20s linear infinite;
 }
