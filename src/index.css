@@ -17,10 +17,10 @@ body {
 
 /* LIGHT THEME */
 :root {
-  --color-primary-for-bg: #030712;
+  --color-primary-for-bg: rgb(3, 7, 18);
   --color-primary: #ffffff;
   --color-secondary: #d4d6d5;
-  --color-accent: #372aac;
+  --color-accent: rgb(55, 42, 172);
   /* 
   --color-base-100: #ffffff;
   --color-base-200: #f3f3f3;
