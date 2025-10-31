@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  background: radial-gradient(circle at top center, var(--color-accent), var(--color-primary-for-bg)) !important;
+  background: radial-gradient(circle at top center, var(--color-accent), var(--color-primary-for-bg), var(--color-primary-for-bg), var(--color-accent)) !important;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-primary);
@@ -56,7 +56,7 @@ body {
 }
 
 .common-btn {
-@apply px-6 py-2 font-medium border-2 border-accent text-primary rounded-md cursor-pointer transition-colors duration-300 ease-linear hover:bg-primary hover:text-accent hover:border-transparent
+@apply px-6 py-2 font-medium border-2 border-accent text-primary rounded-md cursor-pointer transition-colors duration-300 ease-linear hover:bg-white hover:text-accent hover:border-transparent
 }
 
 .resume-btn {

@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(""); // Track clicked link
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   const navigationLinks = [

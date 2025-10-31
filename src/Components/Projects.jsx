@@ -71,8 +71,8 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="my-40">
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+    <section id="projects" className="2xl:pt-32">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
         {projects.map(({ id, projectName, image, description, stackUsed }) => (
           <div className="relative overflow-hidden group border-white/20 bg-white/10 backdrop-blur-lg rounded-xl">
             <img
@@ -84,13 +84,13 @@ const Projects = () => {
             <div
               key={id}
               className="absolute inset-0 border border-white/20 bg-white/80 backdrop-blur-lg rounded-xl p-3 text-primary shadow-lg
-               opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear flex flex-col md:justify-center lg:gap-20 xl:gap-0"
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear flex flex-col md:justify-center lg:gap-20 xl:gap-0 2xl:gap-10"
             >
               <div>
                 <h2 className="text-xl font-semibold text-accent">
                   {projectName}
                 </h2>
-                <p className=" mt-2 mb-4 textarea-md md:text-[12px] lg:text-base">{description}</p>
+                <p className=" mt-2 mb-4 text-[#121212] textarea-md md:text-[12px] lg:text-base">{description}</p>
               </div>
 
               <div className="flex flex-col gap-2 md:gap-5">
@@ -106,10 +106,10 @@ const Projects = () => {
                 </ul>
                 <div className="flex justify-end gap-3 text-2xl">
                   <a href="#">
-                    <FaGithub className="text-primary hover:text-accent" />
+                    <FaGithub className="text-[#121212] hover:text-accent" />
                   </a>
                   <a href="#">
-                    <FaLink className="text-primary hover:text-accent" />
+                    <FaLink className="text-[#121212] hover:text-accent" />
                   </a>
                 </div>
               </div>
