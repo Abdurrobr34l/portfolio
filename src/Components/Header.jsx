@@ -31,6 +31,7 @@ const Header = () => {
 
   return (
     <header
+      data-aos="fade-up"
       className={`py-6 transition-all duration-500 ease-linear ${
         isSticky
           ? "sticky top-0 py-2! z-50 shadow-md bg-base-100 dark:bg-base-100 backdrop-blur-xl"
@@ -42,7 +43,7 @@ const Header = () => {
           {/* Dropdown Menu & Logo */}
           <div className="navbar-start flex items-center gap-4">
             {/* Logo/Home */}
-            <a href="/" onClick={() => setActiveLink("")} className="">
+            <a href="/" onClick={() => setActiveLink("")}>
               <img
                 src={logo}
                 alt="It is the author image"
