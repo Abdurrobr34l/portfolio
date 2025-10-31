@@ -1,7 +1,7 @@
 import React from "react";
 import aboutImage from "../assets/about-image.png";
 // import { FaAngleRight } from "react-icons/fa6";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -13,6 +13,14 @@ const About = () => {
             alt=""
             className="h-[400px] rounded-full md:h-[450px]"
           />
+
+          <div className="flex justify-center gap-5 mt-5 text-3xl text-primary">
+            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaGithub/></a>
+            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaLinkedin/></a>
+            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaFacebook/></a>
+            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaTwitter/></a>
+            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaYoutube/></a>
+          </div>
         </div>
 
         <div>
