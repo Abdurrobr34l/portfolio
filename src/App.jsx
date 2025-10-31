@@ -15,7 +15,7 @@ const App = () => {
     Aos.init({
       duration: 1000, // animation duration (in ms)
       once: true,     // only run animation once
-      offset: 100,    // start animation 100px before element is in view
+      offset: 50,    // start animation 100px before element is in view
     });
   }, []);
 

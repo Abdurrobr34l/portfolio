@@ -9,21 +9,22 @@ const About = () => {
       <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:gap-20 xl:px-32">
         <div>
           <img
+           data-aos="fade-right" data-aos-delay="200"
             src={aboutImage}
             alt=""
             className="h-[400px] rounded-full md:h-[450px]"
           />
 
           <div className="flex justify-center gap-5 mt-5 text-3xl text-primary">
-            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaGithub/></a>
-            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaLinkedin/></a>
-            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaFacebook/></a>
-            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaTwitter/></a>
-            <a href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaYoutube/></a>
+            <a data-aos="fade-up" data-aos-delay="300" href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaGithub/></a>
+            <a data-aos="fade-up" data-aos-delay="400" href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaLinkedin/></a>
+            <a data-aos="fade-up" data-aos-delay="500" href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaFacebook/></a>
+            <a data-aos="fade-up" data-aos-delay="600" href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaTwitter/></a>
+            <a data-aos="fade-up" data-aos-delay="700" href="#" className="transition-colors duration-200 ease-linear hover:text-accent"><FaYoutube/></a>
           </div>
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="200">
           {/* About Text */}
           <div className="max-w-2xl space-y-4 text-center lg:text-start">
             <p className="text-secondary leading-relaxed">

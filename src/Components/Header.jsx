@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header
-      data-aos="fade-up"
+     
       className={`py-6 transition-all duration-500 ease-linear ${
         isSticky
           ? "sticky top-0 py-2! z-50 shadow-md bg-base-100 dark:bg-base-100 backdrop-blur-xl"
@@ -39,7 +39,7 @@ const Header = () => {
       }`}
     >
       <Container>
-        <div className="navbar p-0">
+        <div data-aos="fade-up" className="navbar p-0">
           {/* Dropdown Menu & Logo */}
           <div className="navbar-start flex items-center gap-4">
             {/* Logo/Home */}

@@ -46,18 +46,14 @@ const Projects = () => {
       image: iLander,
       description:
         "iLander is a multi-page WordPress website designed for a creative agency. It features fully responsive layouts, smooth animations, interactive sections, and integrated contact forms. The project highlights custom page designs, clear content hierarchy.",
-      stackUsed: [
-        "WordPress",
-        "PHP",
-        "WPForms",
-        "Custom CSS/Animations",
-      ],
+      stackUsed: ["WordPress", "PHP", "WPForms", "Custom CSS/Animations"],
     },
     {
       id: 5,
       projectName: "Nipro",
       image: nipro,
-      description: "Nipro Agency is a fully responsive multi-page website built with Bootstrap, designed to showcase the services and portfolio of a digital agency. It features smooth scrolling, interactive sections, and custom animations to enhance user engagement.",
+      description:
+        "Nipro Agency is a fully responsive multi-page website built with Bootstrap, designed to showcase the services and portfolio of a digital agency. It features smooth scrolling, interactive sections, and custom animations to enhance user engagement.",
       stackUsed: ["Bootstrap", "JavaScript", "jQuery", "Custom Animations"],
     },
     {
@@ -73,8 +69,14 @@ const Projects = () => {
   return (
     <section id="projects" className="2xl:pt-32">
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
-        {projects.map(({ id, projectName, image, description, stackUsed }) => (
-          <div className="relative overflow-hidden group border-white/20 bg-white/10 backdrop-blur-lg rounded-xl">
+        {projects.map(({ id, projectName, image, description, stackUsed }, index) => (
+          <div
+            key={id}
+            data-aos="fade-up"
+            data-aos-delay={index * 200}
+            data-aos-duration={600 + index * 100}
+            className="relative overflow-hidden group border-white/20 bg-white/10 backdrop-blur-lg rounded-xl"
+          >
             <img
               src={image}
               alt="Project mockup image"
@@ -82,7 +84,6 @@ const Projects = () => {
             />
 
             <div
-              key={id}
               className="absolute inset-0 border border-white/20 bg-white/80 backdrop-blur-lg rounded-xl p-3 text-primary shadow-lg
                opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear flex flex-col md:justify-center lg:gap-20 xl:gap-0 2xl:gap-10"
             >
@@ -90,7 +91,9 @@ const Projects = () => {
                 <h2 className="text-xl font-semibold text-accent">
                   {projectName}
                 </h2>
-                <p className=" mt-2 mb-4 text-[#121212] textarea-md md:text-[12px] lg:text-base">{description}</p>
+                <p className=" mt-2 mb-4 text-[#121212] textarea-md md:text-[12px] lg:text-base">
+                  {description}
+                </p>
               </div>
 
               <div className="flex flex-col gap-2 md:gap-5">
@@ -113,7 +116,6 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              
             </div>
           </div>
         ))}
