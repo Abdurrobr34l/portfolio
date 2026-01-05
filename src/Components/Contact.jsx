@@ -71,13 +71,13 @@ const Contact = () => {
               </h2>
 
               {/* EMAIL */}
-              <div className="flex justify-evenly items-center gap-4 md:justify-normal md:gap-6">
-                <div className="text-primary text-sm  bg-accent/70 p-4 rounded-full flex items-center justify-center">
+              <div className="flex justify-start items-center gap-4 md:justify-normal md:gap-6">
+                <div className="text-primary text-sm bg-accent/70 p-4 rounded-full flex items-center justify-center">
                   <FaRegPaperPlane />
                 </div>
-                <div>
+                <div className="flex flex-col items-start">
                   <p className="text-sm text-gray-300">Email</p>
-                  <p className="text-sm font-semibold text-white">
+                  <p className="text-sm font-semibold text-white md:text-lg">
                     <a
                       href="mailto:abdurrobr34l@gmail.com"
                       className="hover:text-accent"
@@ -91,12 +91,12 @@ const Contact = () => {
               {/* PHONE & WHATSAPP */}
               <div className="flex flex-col gap-5 mt-5 md:items-start">
                 <div className="flex items-center gap-4 md:gap-6">
-                  <div className="text-primary text-sm  bg-accent/70 p-4 rounded-full flex items-center justify-center">
+                  <div className="text-primary text-sm bg-accent/70 p-4 rounded-full flex items-center justify-center">
                     <FaPhoneAlt />
                   </div>
-                  <div>
+                  <div className="flex flex-col items-start">
                     <p className="text-sm text-gray-300">Phone</p>
-                    <p className="text-sm font-semibold text-white">
+                    <p className="text-sm font-semibold text-white md:text-lg">
                       <a
                         href="tel:+8801886580500"
                         className="hover:text-secondary/70!"
@@ -108,12 +108,12 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-center gap-4 md:gap-6">
-                  <div className="text-primary text-sm  bg-accent/70 p-4 rounded-full flex items-center justify-center">
+                  <div className="text-primary text-sm bg-accent/70 p-4 rounded-full flex items-center justify-center">
                     <FaWhatsapp />
                   </div>
-                  <div>
+                  <div className="flex flex-col items-start">
                     <p className="text-sm text-gray-300">WhatsApp</p>
-                    <p className="text-sm font-semibold text-white">
+                    <p className="text-sm font-semibold text-white md:text-lg">
                       <a
                         href="https://wa.me/8801886580500"
                         target="_blank"
