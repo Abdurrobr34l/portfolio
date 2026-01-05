@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { FaGamepad, FaBookOpen, FaBicycle, FaWalking, FaTools } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaGithub, FaGamepad, FaBookOpen, FaBicycle, FaWalking, FaTools } from "react-icons/fa";
 import { FaFootball } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -42,13 +43,14 @@ const About = () => {
         </div>
 
         {/* Main Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid gap-8 lg:grid-cols-2 items-start">
 
-          {/* Left Column: Story and What I Enjoy */}
+          {/* Left Column */}
           <div className="space-y-8">
+          {/* My Programming Story */}
             <div
               data-aos="fade-right"
-              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/30! border border-accent/20"
+              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/10! border border-accent/20"
             >
               <h3 className="font-display text-xl font-semibold mb-4 text-accent">
                 My Programming Journey
@@ -60,14 +62,15 @@ const About = () => {
                 In 2019, I dove into web development, starting with the basics of HTML, CSS, and JavaScript. I liken HTML to the skeleton of a website, CSS to the muscles that shape and style it, and JavaScript to the dynamic functions that bring it to life. Over time, I expanded my skills to include frameworks like React and backend technologies like Node.js, Express, and MongoDB.
               </p>
               <p className="text-secondary leading-relaxed">
-               Today, I specialize in fullstack development and thrive on the challenge of building scalable, impactful applications. When I’m not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community.
+                Today, I specialize in fullstack development and thrive on the challenge of building scalable, impactful applications. When I’m not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community.
               </p>
             </div>
 
+            {/* What i Enjoy */}
             <div
               data-aos="fade-right"
               data-aos-delay="200"
-              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/30! border border-accent/20"
+              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/10! border border-accent/20"
             >
               <h3 className="font-display text-xl font-semibold mb-4 text-accent">
                 What I Enjoy
@@ -76,13 +79,90 @@ const About = () => {
                 I'm passionate about crafting intuitive user experiences and robust backend systems. I thrive on solving challenging problems and love seeing my work positively impact others. Helping people through my projects and sharing my knowledge brings me immense satisfaction.
               </p>
             </div>
+
+            {/* Social Links */}
+            <div
+              data-aos="fade-right"
+              data-aos-delay="200"
+              className="glass-card p-6 md:py-3 md:px-8 rounded-lg shadow-lg bg-primary/10! border border-accent/20"
+            >
+              <h4 className="text-lg font-semibold text-accent mb-4">
+                Connect With Me
+              </h4>
+
+              <div className="flex flex-wrap items-center gap-4">
+                {/* Facebook */}
+                <a
+                  href="https://www.facebook.com/yourprofile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
+                  aria-label="Facebook"
+                >
+                  <FaFacebookF />
+                </a>
+
+                {/* YouTube */}
+                <a
+                  href="https://www.youtube.com/@yourchannel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
+                  aria-label="YouTube"
+                >
+                  <FaYoutube />
+                </a>
+
+                {/* GitHub */}
+                <a
+                  href="https://github.com/Abdurrobr34l"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
+                  aria-label="GitHub"
+                >
+                  <FaGithub />
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/abdurrobr34l/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedinIn />
+                </a>
+
+                {/* Twitter / X */}
+                <a
+                  href="https://x.com/Abdurrob_r34l"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
+                  aria-label="Twitter / X"
+                >
+                  <FaTwitter />
+                </a>
+
+                {/* Email */}
+                <a
+                  href="mailto:abdurrobr34l@gmail.com"
+                  className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
+                  aria-label="Email"
+                >
+                  <MdEmail />
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Right Column: Interests and Quick Facts */}
           <div>
             <div
               data-aos="fade-left"
-              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/30! border border-accent/20 mb-8"
+              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/10! border border-accent/20 mb-8"
             >
               <h3 className="font-display text-xl font-semibold mb-6 text-accent">
                 Beyond Coding
@@ -93,7 +173,7 @@ const About = () => {
                     key={title}
                     data-aos="fade-up"
                     data-aos-delay={idx * 100}
-                    className="p-4 rounded-xl bg-primary/10 border border-accent/30 hover:bg-accent/20 cursor-pointer transition-colors group"
+                    className="p-4 rounded-xl bg-primary/15 border border-accent/30 hover:bg-accent/20 cursor-pointer transition-colors group"
                   >
                     <div className="w-10 h-10 mb-3 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Icon className="h-5 w-5 text-primary" />
@@ -108,7 +188,7 @@ const About = () => {
             <div
               data-aos="fade-left"
               data-aos-delay="200"
-              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/30! border border-accent/20"
+              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/10! border border-accent/20"
             >
               <h3 className="font-display text-xl font-semibold mb-4 text-accent">
                 Quick Facts

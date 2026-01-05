@@ -32,7 +32,7 @@ const Projects = () => {
       {/* Grid */}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {projects.map((project) => (
-          <div key={project.id} className="glass-card overflow-hidden flex flex-col">
+          <div key={project.id} className="glass-card bg-primary/15! overflow-hidden flex flex-col">
             {/* IMAGE / PREVIEW AREA */}
             <div className="h-44 bg-accent/25 relative overflow-hidden">
               <div

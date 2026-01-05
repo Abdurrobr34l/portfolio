@@ -94,7 +94,7 @@ useEffect(() => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="glass-card p-4">
+        <div className="glass-card bg-primary/15! p-4">
           <img
             src={project.image.startsWith("http") ? project.image : `/${project.image}`}
             alt={project.name}
@@ -108,7 +108,7 @@ useEffect(() => {
         {/* LEFT COLUMN */}
         <div className="lg:col-span-2 space-y-10">
           {/* TECHNOLOGY STACK */}
-          <div className="glass-card p-6">
+          <div className="glass-card bg-primary/15! p-6">
             <h2 className="text-xl font-semibold text-primary mb-4">
               Main Technology Stack
             </h2>
@@ -116,7 +116,7 @@ useEffect(() => {
               {project.techStack.map((tech, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-sm rounded-full bg-secondary/80 text-accent font-medium"
+                  className="px-3 py-1 text-sm rounded-full bg-secondary/90 text-accent font-semibold"
                 >
                   {tech}
                 </span>
@@ -125,7 +125,7 @@ useEffect(() => {
           </div>
 
           {/* CHALLENGES */}
-          <div className="glass-card p-6">
+          <div className="glass-card bg-primary/15! p-6">
             <h2 className="text-xl font-semibold text-primary mb-4">
               Challenges Faced
             </h2>
@@ -133,7 +133,7 @@ useEffect(() => {
           </div>
 
           {/* FUTURE PLANS */}
-          <div className="glass-card p-6">
+          <div className="glass-card bg-primary/15! p-6">
             <h2 className="text-xl font-semibold text-primary mb-4">
               Future Improvements & Plans
             </h2>
@@ -144,7 +144,7 @@ useEffect(() => {
         {/* RIGHT COLUMN */}
         <div className="space-y-10">
           {/* PROJECT INFO */}
-          <div className="glass-card p-6">
+          <div className="glass-card bg-primary/15! p-6">
             <h2 className="text-xl font-semibold text-primary mb-4">
               Project Overview
             </h2>

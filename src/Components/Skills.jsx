@@ -28,7 +28,7 @@ const skillCategories = [
     skills: [
       { name: "Git & GitHub", level: 90 },
       { name: "VS Code", level: 65 },
-      { name: "Postman", level: 70 },
+      { name: "WordPress", level: 90 },
       { name: "Figma", level: 75 },
       { name: "Canva", level: 100 },
     ],
@@ -84,7 +84,7 @@ export const Skills = () => {
         </motion.div>
 
         {/* Skill Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}

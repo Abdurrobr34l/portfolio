@@ -59,7 +59,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[calc(100vh-88px)] flex items-center overflow-hidden">
       <div className="container mx-auto my-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* ---------------- LEFT CONTENT ---------------- */}
@@ -106,7 +106,7 @@ const Hero = () => {
               href="https://github.com/Abdurrobr34l"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full text-primary bg-white/10 hover:bg-accent transition"
+              className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
               aria-label="GitHub"
             >
               <FaGithub />
@@ -116,7 +116,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/abdurrobr34l/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full text-primary bg-white/10 hover:bg-accent transition"
+              className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
               aria-label="LinkedIn"
             >
               <FaLinkedinIn />
@@ -126,7 +126,7 @@ const Hero = () => {
               href="https://x.com/Abdurrob_r34l"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full text-primary bg-white/10 hover:bg-accent transition"
+              className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
               aria-label="Twitter / X"
             >
               <FaTwitter />
@@ -134,7 +134,7 @@ const Hero = () => {
 
             <a
               href="mailto:abdurrobr34l@gmail.com"
-              className="p-3 rounded-full text-primary bg-white/10 hover:bg-accent transition"
+              className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
               aria-label="Email"
             >
               <MdEmail />

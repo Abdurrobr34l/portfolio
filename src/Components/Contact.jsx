@@ -59,13 +59,13 @@ const Contact = () => {
         </p>
       </motion.div>
 
-      <div className="hero mb-10 border border-red-600">
-        <div className="hero-content gap-8 py-0! px-0! md:w-[80%] flex-col lg:flex-row xl:w-full border border-red-600">
+      <div className="hero mb-10">
+        <div className="hero-content gap-8 py-0! px-0! md:w-[80%] flex-col lg:flex-row xl:w-full">
 
           {/* LEFT SIDE (UNCHANGED) */}
           <div className="flex flex-col gap-8 text-primary/70! text-center lg:text-left">
             {/* Your left side content stays unchanged */}
-            <div className="glass-card bg-primary/30! p-4">
+            <div className="glass-card bg-primary/15! p-4">
               <h2 className="pt-3 pb-8 text-accent text-xl font-semibold xl:w-10/12">
                 Get in Touch
               </h2>
@@ -128,19 +128,19 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="glass-card bg-primary/30! p-4">
+            <div className="glass-card bg-primary/15! p-4">
               <h3 className="font-display text-xl font-semibold mb-2 text-accent">
                 Response Time
               </h3>
               <p>
                 I typically respond within 24–48 hours. For urgent inquiries,
-                please reach out via WhatsApp.
+                please reach out via WhatsApp or Phone.
               </p>
             </div>
           </div>
 
           {/* RIGHT SIDE (FORM) */}
-          <div className="card bg-primary/30 w-full max-w-lg shrink-0 shadow-2xl">
+          <div className="card bg-primary/15 w-full max-w-lg shrink-0 shadow-2xl">
             <div className="card-body">
               <form ref={formRef} onSubmit={sendEmail}>
                 <fieldset className="fieldset">
@@ -153,7 +153,7 @@ const Contact = () => {
                     type="text"
                     name="user_name"
                     required
-                    className="input bg-white/20 text-primary placeholder:text-secondary/60 w-full py-6 rounded-lg focus:outline-2 focus:outline-accent!"
+                    className="input bg-secondary/20 text-primary placeholder:text-secondary/60 w-full py-6 rounded-lg focus:outline-2 focus:outline-accent!"
                     placeholder="Your Name"
                   />
 
@@ -162,7 +162,7 @@ const Contact = () => {
                     type="email"
                     name="user_email"
                     required
-                    className="input bg-white/20 text-primary placeholder:text-secondary/60 w-full py-6 rounded-lg focus:outline-2 focus:outline-accent!"
+                    className="input bg-secondary/20 text-primary placeholder:text-secondary/60 w-full py-6 rounded-lg focus:outline-2 focus:outline-accent!"
                     placeholder="Your Email"
                   />
 
@@ -171,10 +171,10 @@ const Contact = () => {
                     name="message"
                     required
                     placeholder="Your Message"
-                    className="textarea bg-white/20 text-primary placeholder:text-secondary/60 textarea-sm w-full rounded-lg focus:outline-2 focus:outline-accent!"
+                    className="textarea bg-secondary/20 text-primary placeholder:text-secondary/60 textarea-sm w-full rounded-lg focus:outline-2 focus:outline-accent!"
                   />
 
-                  <button type="submit" className="common-btn resume-btn mt-4">
+                  <button type="submit" className="common-btn resume-btn font-semibold! mt-4">
                     Send
                   </button>
 
