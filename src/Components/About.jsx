@@ -21,7 +21,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="lg:px-16 bg-primary-for-bg text-primary"
+      className="bg-primary-for-bg text-primary"
     >
       <div className="max-w-7xl mx-auto">
 

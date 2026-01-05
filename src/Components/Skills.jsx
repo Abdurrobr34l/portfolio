@@ -63,7 +63,7 @@ export const Skills = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="skills" className="lg:px-16">
+    <section id="skills">
       <div className="max-w-7xl mx-auto" ref={ref}>
         {/* Section Header */}
         <motion.div
@@ -91,7 +91,7 @@ export const Skills = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: categoryIndex * 0.15 }}
-              className="glass-card p-6 md:p-8 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+              className="glass-card p-6 md:p-8 rounded-xl shadow-lg transition-transform duration-300 ease-linear hover:scale-[105%]"
             >
               <h3 className="font-display text-xl font-semibold mb-6 text-accent">
                 {category.title}

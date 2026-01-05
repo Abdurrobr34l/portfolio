@@ -70,7 +70,7 @@ const App = () => {
       />
 
       <main>
-        <Container customStyle={"flex flex-col gap-20 xl:gap-40"}>
+        <Container customStyle={"flex flex-col gap-20 xl:gap-32"}>
           <Hero></Hero>
           <About></About>
           <Skills></Skills>
