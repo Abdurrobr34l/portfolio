@@ -33,9 +33,9 @@ const Header = ({ darkMode, setDarkMode }) => {
   return (
     <header
      
-      className={`pt-6 transition-all duration-500 ease-linear ${
+      className={`pt-6 transition-all duration-500 ease-linear relative z-50 ${
         isSticky
-          ? "sticky top-0 py-2! z-50 shadow-md bg-base-100/20! dark:bg-base-100 backdrop-blur-xl"
+          ? "sticky top-0 py-2! shadow-md bg-base-100/20! dark:bg-base-100 backdrop-blur-xl"
           : ""
       }`}
     >
@@ -73,7 +73,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 
               <ul
                 tabIndex={-1}
-                className="menu menu-sm dropdown-content bg-base-100! rounded-box z-1 mt-3 w-52 p-2 shadow outline-2 outline-indigo-800"
+                className="menu menu-sm dropdown-content bg-base-100! rounded-box z-40! mt-5 w-52 p-2 shadow outline-2 outline-indigo-800"
               >
                 {navigationLinks.map((link) => (
                   <li key={link.id}>

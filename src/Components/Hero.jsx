@@ -65,13 +65,13 @@ const Hero = () => {
         {/* ---------------- LEFT CONTENT ---------------- */}
         <div className="space-y-6">
           {/* Badge */}
-          <span className="inline-flex items-center gap-2 py-1 rounded-full bg-accent/20 text-secondary text-md font-medium w-fit">
+          <span className="inline-flex items-center gap-2 p-2 pr-3 rounded-full bg-primary/30 text-secondary text-md font-medium w-fit">
             <span className="inline-block animate-wave">👋</span>
             Welcome to my portfolio
           </span>
 
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl xl:text-6xl font-bold leading-tight text-primary">
+          <h1 className="text-3xl sm:text-5xl xl:text-6xl font-bold leading-tight text-primary">
             Hi, I’m <span className="text-accent text-shadow">Abdur Rob</span>
             <br />
             Fullstack Developer
