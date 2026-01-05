@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import App from "../App";
 import ProjectDetails from "../Components/ProjectDetails";
 import Home from "../Components/Home/Home";
-import ErrorPage404 from "../Components/ErrorPage404/ErrorPage404";
+import NotFound from "../Components/ErrorPage404/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "*",
-        element: <ErrorPage404 />,
+        element: <NotFound />,
       },
     ],
   },

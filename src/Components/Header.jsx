@@ -9,8 +9,9 @@ const Header = ({ darkMode, setDarkMode }) => {
 
   const navigationLinks = [
     { id: 1, path: "#about", name: "About" },
+    { id: 1, path: "#skills", name: "Skills" },
     { id: 2, path: "#projects", name: "Projects" },
-    { id: 3, path: "#contact", name: "Contact" },
+    { id: 3, path: "#contact", name: "Contact Me" },
   ];
 
   // Sticky navbar on scroll
