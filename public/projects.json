@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "Scholar Stream",
+    "image": "https://i.ibb.co.com/rGJhSy7W/scholar.png",
+    "liveUrl": "https://scholarships-stream.netlify.app/all-scholarships",
+    "clientRepo": "", 
+    "techStack": [
+      "React v19.2",
+      "TailwindCSS",
+      "DaisyUI",
+      "React Router",
+      "React Hook Form",
+      "Axios",
+      "Framer Motion",
+      "TanStack Query",
+      "React Toastify",
+      "Recharts",
+      "SweetAlert2",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Firebase Admin SDK",
+      "Stripe"
+    ],
+    "briefDescription": "A full-stack scholarship management platform to help students explore, apply, and track scholarships with role-based access and admin tools.",
+    "challenges": "Integrating role-based access with Firebase, managing dynamic content rendering, and implementing smooth animations for a responsive UI.",
+    "futurePlans": "Add more analytics dashboards for admins, integrate additional payment options, and improve accessibility.",
+    "shortDescription": "Scholarship management platform with React, TailwindCSS, and Node.js."
+  },
+  {
+    "id": 2,
+    "name": "FinEase – Personal Finance Management App",
+    "image": "https://i.ibb.co.com/2Y83cgF9/finance.png",
+    "liveUrl": "https://finease-bd.netlify.app/",
+    "clientRepo": "", 
+    "techStack": [
+      "React.js (Vite)",
+      "Tailwind CSS",
+      "DaisyUI",
+      "React Router",
+      "React Toastify",
+      "date-fns",
+      "Recharts",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "Netlify",
+      "Vercel"
+    ],
+    "briefDescription": "A personal finance web app for tracking income, expenses, budgets, and savings goals with interactive charts and reports.",
+    "challenges": "Implementing real-time transaction updates, interactive charts, and secure authentication with Firebase.",
+    "futurePlans": "Add multi-currency support, recurring transaction tracking, and predictive expense analytics.",
+    "shortDescription": "Track income, expenses, and budgets with React and Firebase."
+  },
+  {
+    "id": 3,
+    "name": "Appsphere",
+    "image": "https://i.ibb.co.com/chXZ5DVr/heroapp.png",
+    "liveUrl": "https://appsphere-store.netlify.app/",
+    "clientRepo": "", 
+    "techStack": [
+      "React",
+      "Vite",
+      "React Router v6",
+      "Tailwind CSS",
+      "DaisyUI",
+      "React Icon",
+      "Axios",
+      "Recharts",
+      "react-toastify"
+    ],
+    "briefDescription": "A responsive app-store UI that displays apps, supports live search, app details pages with review charts, and localStorage-based installation management.",
+    "challenges": "Implementing live search with sorting, managing localStorage installation, and visualizing app reviews using Recharts.",
+    "futurePlans": "Add user authentication, backend integration, and rating/comment system.",
+    "shortDescription": "Responsive app-store UI with search, charts, and installation management."
+  }
+]
