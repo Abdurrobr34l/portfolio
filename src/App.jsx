@@ -10,6 +10,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
 import Loader from "./Components/Loader";
+import Lenis from "lenis";
+import Skills from "./Components/Skills";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,6 +27,30 @@ const App = () => {
     }, 1000);
 
     return () => clearTimeout(timer);
+  }, []);
+
+useEffect(() => {
+  const refresh = () => Aos.refresh();
+  window.addEventListener("scroll", refresh);
+  return () => window.removeEventListener("scroll", refresh);
+}, []);
+  useEffect(() => {
+    const lenis = new Lenis({
+      smooth: true,
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
 
   if (loading) return <Loader fade={fade} />;
@@ -46,6 +72,7 @@ const App = () => {
         <Container>
           <Hero></Hero>
           <About></About>
+          <Skills></Skills>
           <Projects></Projects>
           <Contact></Contact>
         </Container>

@@ -32,9 +32,9 @@ const Header = ({ darkMode, setDarkMode }) => {
   return (
     <header
      
-      className={`py-6 transition-all duration-500 ease-linear ${
+      className={`pt-6 transition-all duration-500 ease-linear ${
         isSticky
-          ? "sticky top-0 py-2! z-50 shadow-md bg-base-100 dark:bg-base-100 backdrop-blur-xl"
+          ? "sticky top-0 py-2! z-50 shadow-md bg-base-100/20! dark:bg-base-100 backdrop-blur-xl"
           : ""
       }`}
     >
@@ -52,8 +52,8 @@ const Header = ({ darkMode, setDarkMode }) => {
             </a>
 
             {/* Mobile Dropdown */}
-            <div className="dropdown">
-              <div tabIndex={0} className="btn btn-ghost lg:hidden pl-0">
+            <div className="dropdown rounded-box">
+              <div tabIndex={0} className="btn btn-ghost lg:hidden ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -72,7 +72,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 
               <ul
                 tabIndex={-1}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow outline-2 outline-indigo-800"
+                className="menu menu-sm dropdown-content bg-base-100! rounded-box z-1 mt-3 w-52 p-2 shadow outline-2 outline-indigo-800"
               >
                 {navigationLinks.map((link) => (
                   <li key={link.id}>
