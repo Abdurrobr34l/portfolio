@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
 import Loader from "./Components/Loader";
 import Lenis from "lenis";
-import Skills from "./Components/Skills";
+import {Skills} from "./Components/Skills";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -29,11 +29,12 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-useEffect(() => {
-  const refresh = () => Aos.refresh();
-  window.addEventListener("scroll", refresh);
-  return () => window.removeEventListener("scroll", refresh);
-}, []);
+  useEffect(() => {
+    const refresh = () => Aos.refresh();
+    window.addEventListener("scroll", refresh);
+    return () => window.removeEventListener("scroll", refresh);
+  }, []);
+
   useEffect(() => {
     const lenis = new Lenis({
       smooth: true,
@@ -69,7 +70,7 @@ useEffect(() => {
       />
 
       <main>
-        <Container>
+        <Container customStyle={"flex flex-col gap-20 xl:gap-40"}>
           <Hero></Hero>
           <About></About>
           <Skills></Skills>

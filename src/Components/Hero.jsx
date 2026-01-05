@@ -60,12 +60,12 @@ import { SiNextdotjs } from "react-icons/si";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto my-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* ---------------- LEFT CONTENT ---------------- */}
         <div className="space-y-6">
           {/* Badge */}
-          <span className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-accent/20 text-secondary text-md font-medium w-fit">
+          <span className="inline-flex items-center gap-2 py-1 rounded-full bg-accent/20 text-secondary text-md font-medium w-fit">
             <span className="inline-block animate-wave">👋</span>
             Welcome to my portfolio
           </span>

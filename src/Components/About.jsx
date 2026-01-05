@@ -21,7 +21,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 px-6 lg:px-16 bg-primary-for-bg text-primary min-h-screen"
+      className="lg:px-16 bg-primary-for-bg text-primary"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -48,7 +48,7 @@ const About = () => {
           <div className="space-y-8">
             <div
               data-aos="fade-right"
-              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary-for-bg/70 border border-accent/20"
+              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/30! border border-accent/20"
             >
               <h3 className="font-display text-xl font-semibold mb-4 text-accent">
                 My Programming Journey
@@ -67,7 +67,7 @@ const About = () => {
             <div
               data-aos="fade-right"
               data-aos-delay="200"
-              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary-for-bg/70 border border-accent/20"
+              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/30! border border-accent/20"
             >
               <h3 className="font-display text-xl font-semibold mb-4 text-accent">
                 What I Enjoy
@@ -82,18 +82,18 @@ const About = () => {
           <div>
             <div
               data-aos="fade-left"
-              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary-for-bg/70 border border-accent/20 mb-8"
+              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/30! border border-accent/20 mb-8"
             >
               <h3 className="font-display text-xl font-semibold mb-6 text-accent">
                 Beyond Coding
               </h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 {interests.map(({ icon: Icon, title, description }, idx) => (
                   <div
                     key={title}
                     data-aos="fade-up"
                     data-aos-delay={idx * 100}
-                    className="p-4 rounded-xl bg-primary-for-bg/50 border border-accent/30 hover:bg-accent/20 cursor-pointer transition-colors group"
+                    className="p-4 rounded-xl bg-primary/10 border border-accent/30 hover:bg-accent/20 cursor-pointer transition-colors group"
                   >
                     <div className="w-10 h-10 mb-3 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Icon className="h-5 w-5 text-primary" />
@@ -108,7 +108,7 @@ const About = () => {
             <div
               data-aos="fade-left"
               data-aos-delay="200"
-              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary-for-bg/70 border border-accent/20"
+              className="glass-card p-6 md:p-8 rounded-lg shadow-lg bg-primary/30! border border-accent/20"
             >
               <h3 className="font-display text-xl font-semibold mb-4 text-accent">
                 Quick Facts
