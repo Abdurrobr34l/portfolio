@@ -84,7 +84,7 @@ const About = () => {
             <div
               data-aos="fade-right"
               data-aos-delay="200"
-              className="glass-card p-6 md:py-3 md:px-8 rounded-lg shadow-lg bg-primary/10! border border-accent/20"
+              className="glass-card p-6 md:py-6 2xl:py-3.5 rounded-lg shadow-lg bg-primary/10! border border-accent/20"
             >
               <h4 className="text-lg font-semibold text-accent mb-4">
                 Connect With Me

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer sm:footer-horizontal footer-center text-primary p-4 shadow-[0_-3px_6px_rgba(0,0,0,0.1)]">
   
-  <Container customStyle='flex flex-row items-center justify-between'>
+  <Container customStyle='flex flex-col-reverse gap-2 md:flex-row md:justify-between md:gap-0'>
     <p>© {new Date().getFullYear()} <span className='pr-1.5 font-bold text-[#030712]'>ABDUR ROB.</span>All right reserved</p>
 
     <div className='flex gap-4'>
