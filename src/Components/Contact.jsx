@@ -60,9 +60,9 @@ const Contact = () => {
       </motion.div>
 
       <div className="hero mb-10">
-        <div className="hero-content gap-8 py-0! px-0! md:w-[80%] flex-col lg:flex-row xl:w-full">
+        <div className="hero-content gap-8 py-0! px-0! w-full! md:w-[80%] flex-col lg:flex-row xl:w-full">
 
-          {/* LEFT SIDE (UNCHANGED) */}
+          {/* LEFT SIDE */}
           <div className="flex flex-col gap-8 text-primary/70! text-center lg:text-left">
             {/* Your left side content stays unchanged */}
             <div className="glass-card bg-primary/15! p-4">
@@ -72,12 +72,12 @@ const Contact = () => {
 
               {/* EMAIL */}
               <div className="flex justify-evenly items-center gap-4 md:justify-normal md:gap-6">
-                <div className="text-primary text-xl bg-accent/70 p-4 rounded-full flex items-center justify-center">
+                <div className="text-primary text-sm  bg-accent/70 p-4 rounded-full flex items-center justify-center">
                   <FaRegPaperPlane />
                 </div>
                 <div>
                   <p className="text-sm text-gray-300">Email</p>
-                  <p className="text-lg font-semibold text-white">
+                  <p className="text-sm font-semibold text-white">
                     <a
                       href="mailto:abdurrobr34l@gmail.com"
                       className="hover:text-accent"
@@ -91,12 +91,12 @@ const Contact = () => {
               {/* PHONE & WHATSAPP */}
               <div className="flex flex-col gap-5 mt-5 md:items-start">
                 <div className="flex items-center gap-4 md:gap-6">
-                  <div className="text-primary text-xl bg-accent/70 p-4 rounded-full flex items-center justify-center">
+                  <div className="text-primary text-sm  bg-accent/70 p-4 rounded-full flex items-center justify-center">
                     <FaPhoneAlt />
                   </div>
                   <div>
                     <p className="text-sm text-gray-300">Phone</p>
-                    <p className="text-lg font-semibold text-white">
+                    <p className="text-sm font-semibold text-white">
                       <a
                         href="tel:+8801886580500"
                         className="hover:text-secondary/70!"
@@ -108,12 +108,12 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-center gap-4 md:gap-6">
-                  <div className="text-primary text-xl bg-accent/70 p-4 rounded-full flex items-center justify-center">
+                  <div className="text-primary text-sm  bg-accent/70 p-4 rounded-full flex items-center justify-center">
                     <FaWhatsapp />
                   </div>
                   <div>
                     <p className="text-sm text-gray-300">WhatsApp</p>
-                    <p className="text-lg font-semibold text-white">
+                    <p className="text-sm font-semibold text-white">
                       <a
                         href="https://wa.me/8801886580500"
                         target="_blank"
