@@ -147,3 +147,7 @@ body {
 .glass-card:hover {
   transform: translateY(-4px) scale(1.02);
 }
+
+.hero-content {
+  @apply p-0 w-full
+}

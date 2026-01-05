@@ -59,11 +59,11 @@ const Contact = () => {
         </p>
       </motion.div>
 
-      <div className="hero mb-10">
-        <div className="hero-content gap-10 px-0 md:w-[80%] flex-col lg:flex-row xl:w-full">
+      <div className="hero mb-10 border border-red-600">
+        <div className="hero-content gap-8 py-0! px-0! md:w-[80%] flex-col lg:flex-row xl:w-full border border-red-600">
 
           {/* LEFT SIDE (UNCHANGED) */}
-          <div className="text-primary/70! text-center lg:text-left">
+          <div className="flex flex-col gap-8 text-primary/70! text-center lg:text-left">
             {/* Your left side content stays unchanged */}
             <div className="glass-card bg-primary/30! p-4">
               <h2 className="pt-3 pb-8 text-accent text-xl font-semibold xl:w-10/12">
@@ -128,7 +128,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="glass-card bg-primary/30! mt-6 p-4">
+            <div className="glass-card bg-primary/30! p-4">
               <h3 className="font-display text-xl font-semibold mb-2 text-accent">
                 Response Time
               </h3>
