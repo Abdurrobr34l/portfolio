@@ -93,7 +93,7 @@ const About = () => {
               <div className="flex flex-wrap items-center gap-4">
                 {/* Facebook */}
                 <a
-                  href="https://www.facebook.com/yourprofile"
+                  href="https://www.facebook.com/abdurrobr34l"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
@@ -104,7 +104,7 @@ const About = () => {
 
                 {/* YouTube */}
                 <a
-                  href="https://www.youtube.com/@yourchannel"
+                  href="https://www.youtube.com/@abdurrobr34l/videos"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full text-primary bg-secondary/15 hover:bg-white hover:text-accent transition"
