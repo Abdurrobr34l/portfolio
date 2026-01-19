@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
 import Loader from "./Components/Loader";
 import Lenis from "lenis";
+import GoToTop from "./Utilities/GoToTop";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -40,6 +41,7 @@ const App = () => {
 
   return (
     <div className="bg-base-100 text-base-content min-h-screen">
+      <GoToTop />
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <AnimatedCursor
         innerSize={8}

@@ -6,9 +6,9 @@ import Container from "../Container";
 const NotFound = () => {
   return (
       <Container>
-    <section className="min-h-screen flex flex-col items-center justify-center text-primary bg-primary-for-bg">
+    <section className="min-h-[calc(100vh-140px)] flex flex-col items-center justify-center text-primary bg-primary-for-bg">
         <div className="bg-secondary/40 rounded-xl p-8 max-w-md text-center shadow-lg">
-          <h1 className="text-8xl font-extrabold mb-6 text-accent animate-glow">
+          <h1 className="text-8xl font-extrabold mb-6 text-error animate-glow">
             404
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-secondary">
