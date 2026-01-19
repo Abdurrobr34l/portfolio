@@ -30,7 +30,7 @@ const GoToTop = () => {
       {visible && (
         <button
           onClick={scrollToTop}
-          className="animate-bounce fixed bottom-6 right-6 bg-accent/20 text-white shadow-white p-3 rounded-full shadow-sm transition-colors duration-300 ease-linear hover:bg-primary hover:text-accent z-50"
+          className="animate-bounce fixed bottom-6 left-1/2 -translate-x-1/2 bg-accent/20 text-white shadow-white p-3 rounded-full shadow-sm transition-colors duration-300 ease-linear hover:bg-primary hover:text-accent z-50 md:left-auto md:right-0"
         >
           <FaArrowUp size={20} />
         </button>
