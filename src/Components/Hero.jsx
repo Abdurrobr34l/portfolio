@@ -56,6 +56,7 @@ import aboutImage from "../assets/mine-5.webp";
 import { FaGithub, FaLinkedinIn, FaReact, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { SiNextdotjs } from "react-icons/si";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -85,12 +86,13 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
-            <a
+            {/* <a
               href="/resume.pdf"
               className="common-btn resume-btn"
             >
               Download Resume
-            </a>
+            </a> */}
+            <Link to="/Resume.pdf" target="_blank" download className="common-btn resume-btn">Download Resume</Link>
 
             <a
               href="#contact"

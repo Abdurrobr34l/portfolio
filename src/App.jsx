@@ -49,6 +49,7 @@ const App = () => {
         innerScale={0.7}
         outerScale={2}
         clickables={["a", "button", "input", "textarea", "select", "label"]}
+        trailingSpeed={0.1}
       />
 
       <main>

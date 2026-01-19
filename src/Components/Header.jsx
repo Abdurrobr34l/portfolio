@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Container from "./Container";
 import logo from "../assets/logo.png";
+import { Link } from "react-router";
 
 const Header = ({ darkMode, setDarkMode }) => {
   const [activeLink, setActiveLink] = useState(""); // Track clicked link
@@ -154,7 +155,8 @@ const Header = ({ darkMode, setDarkMode }) => {
               </svg>
             </label>
 
-            <button className="common-btn resume-btn">Resume</button>
+            {/* <button className="common-btn resume-btn">Resume</button> */}
+            <Link to={"https://drive.google.com/file/d/17s7ITyvCnnofVp-S8kXOA5X5cPEdn8Zg/view"} target="_blank" className="common-btn resume-btn">Resume</Link>
           </div>
         </div>
       </Container>
