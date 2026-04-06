@@ -1,10 +1,37 @@
 [
   {
     "id": 1,
+    "name": "NestFinder",
+    "image": "https://i.ibb.co.com/ymfTCD15/Screenshot-2026-04-06-112841.png",
+    "liveUrl": "https://nestfinder-bd.netlify.app/",
+    "clientRepo": "",
+    "serverRepo": "",
+    "techStack": [
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Bcrypt",
+      "Google Gemini AI",
+      "Recharts",
+      "Axios",
+      "Vite"
+    ],
+    "briefDescription": "A full-stack real estate listing platform for the Bangladesh property market with role-based dashboards, AI chatbot, booking management, and admin analytics.",
+    "challenges": "Implementing JWT auth with role-based access, connecting Gemini AI for property suggestions and review summarization, and handling real-time search filtering with pagination.",
+    "futurePlans": "Add image upload, payment integration, property owner verification, and map-based property search.",
+    "shortDescription": "Full-stack real estate platform with AI chatbot, JWT auth, and admin dashboard."
+  },
+  {
+    "id": 2,
     "name": "Scholar Stream",
     "image": "https://i.ibb.co.com/rGJhSy7W/scholar.png",
     "liveUrl": "https://scholarships-stream.netlify.app/all-scholarships",
-    "clientRepo": "", 
+    "clientRepo": "",
     "techStack": [
       "React v19.2",
       "TailwindCSS",
@@ -29,11 +56,11 @@
     "shortDescription": "Scholarship management platform with React, TailwindCSS, and Node.js."
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "FinEase – Personal Finance Management App",
     "image": "https://i.ibb.co.com/2Y83cgF9/finance.png",
     "liveUrl": "https://finease-bd.netlify.app/",
-    "clientRepo": "", 
+    "clientRepo": "",
     "techStack": [
       "React.js (Vite)",
       "Tailwind CSS",
@@ -53,27 +80,5 @@
     "challenges": "Implementing real-time transaction updates, interactive charts, and secure authentication with Firebase.",
     "futurePlans": "Add multi-currency support, recurring transaction tracking, and predictive expense analytics.",
     "shortDescription": "Track income, expenses, and budgets with React and Firebase."
-  },
-  {
-    "id": 3,
-    "name": "Appsphere",
-    "image": "https://i.ibb.co.com/chXZ5DVr/heroapp.png",
-    "liveUrl": "https://appsphere-store.netlify.app/",
-    "clientRepo": "", 
-    "techStack": [
-      "React",
-      "Vite",
-      "React Router v6",
-      "Tailwind CSS",
-      "DaisyUI",
-      "React Icon",
-      "Axios",
-      "Recharts",
-      "react-toastify"
-    ],
-    "briefDescription": "A responsive app-store UI that displays apps, supports live search, app details pages with review charts, and localStorage-based installation management.",
-    "challenges": "Implementing live search with sorting, managing localStorage installation, and visualizing app reviews using Recharts.",
-    "futurePlans": "Add user authentication, backend integration, and rating/comment system.",
-    "shortDescription": "Responsive app-store UI with search, charts, and installation management."
   }
 ]
