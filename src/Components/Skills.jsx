@@ -7,7 +7,7 @@ const skillCategories = [
     title: "Frontend",
     skills: [
       { name: "React", level: 90 },
-      { name: "Next.js", level: 80 },
+      { name: "Next.js", level: 90 },
       { name: "TypeScript", level: 80 },
       { name: "Tailwind CSS", level: 95 },
       { name: "Bootstrap", level: 95 },
@@ -27,9 +27,9 @@ const skillCategories = [
     title: "Tools & Others",
     skills: [
       { name: "Git & GitHub", level: 90 },
-      { name: "VS Code", level: 65 },
-      { name: "WordPress", level: 90 },
-      { name: "Figma", level: 75 },
+      { name: "VS Code", level: 95 },
+      { name: "WordPress", level: 95 },
+      { name: "Figma", level: 100 },
       { name: "Canva", level: 100 },
     ],
   },

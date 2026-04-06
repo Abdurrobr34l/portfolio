@@ -156,7 +156,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             </label>
 
             {/* <button className="common-btn resume-btn">Resume</button> */}
-            <Link to={"https://drive.google.com/file/d/17s7ITyvCnnofVp-S8kXOA5X5cPEdn8Zg/view"} target="_blank" className="common-btn resume-btn">Resume</Link>
+            <Link to={"https://drive.google.com/file/d/1E06mu_cj644D5XsLL08X6dplNwLttXah/view?usp=sharing"} target="_blank" className="common-btn resume-btn">Resume</Link>
           </div>
         </div>
       </Container>
